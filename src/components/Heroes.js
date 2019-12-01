@@ -7,9 +7,9 @@ const Heroes = ({heroes}) => {
             {heroes.map((hero) => (
                 <div>
                     <div>
-                        <h5>{hero.name}</h5>
-                        <h6>{hero.id}</h6>
-
+                        <h5>{hero.localized_name}</h5>
+                        <div><img src={ 'https://api.opendota.com' + hero.img }/>
+                        </div>
                     </div>
                 </div>
             ))}
